@@ -79,8 +79,17 @@
               );
             ?>
 
-            <a class="navbar-item" href="https://www.facebook.com/">
+            <a class="navbar-item" href="https://business.facebook.com/2ndlayer.eu/">
               <i class="fab fa-facebook-square title"></i>
+            </a>
+            <a class="navbar-item" href="https://www.linkedin.com/company/2ndlayer/">
+              <i class="fab fa-linkedin title"></i>
+            </a>
+            <a class="navbar-item" href="https://github.com/2nd-Layer">
+              <i class="fab fa-github-square title"></i>
+            </a>
+            <a class="navbar-item" href="https://www.youtube.com/channel/UCncyGaCH5emsxroa3-YIb_A/">
+              <i class="fab fa-youtube-square title"></i>
             </a>
           </div>
         </nav>
