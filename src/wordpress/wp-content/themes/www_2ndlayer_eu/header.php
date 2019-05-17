@@ -53,6 +53,8 @@
     <!-- Bulma Version 0.7.4-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
+    <?php wp_head(); ?>
+
   </head>
   <body id="site">
     <header>
