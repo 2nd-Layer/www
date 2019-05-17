@@ -20,14 +20,10 @@ footer {
 }
 
 #site-content {
-  margin: 0.5rem;
+  padding: 1rem 2rem;
   flex: auto;
 }
 
-#site-content #primary-content {
-  padding-top: 0rem;
-}
-
-#site-content #primary-content p {
-  margin-bottom: 0.75rem;
+#site-content-full-width {
+  flex: auto;
 }
