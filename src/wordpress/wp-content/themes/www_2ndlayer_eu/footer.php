@@ -4,7 +4,7 @@
         </div>
         <div class="column has-text-centered">
         </div>
-        <div class="column has-text-centered is-one-forth">
+        <div class="column has-text-right is-one-forth">
           <img 
             src="<?php echo get_bloginfo('template_directory'); ?>/images/2nd-layer-logo-white.png"
             style="height: 100px;" />
@@ -14,7 +14,8 @@
                 if (date('Y') > 2019) {
                   echo ' - '.date('Y');
                 }
-              ?> © <strong class="has-text-white">2<sup>nd</sup> Layer</strong> - All rights reserved.
+              ?> © <strong class="has-text-white">2<sup>nd</sup> Layer</strong><br/>
+              All rights reserved.
             </p>
         </div>
       </div>
