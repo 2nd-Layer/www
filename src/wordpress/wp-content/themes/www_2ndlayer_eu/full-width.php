@@ -9,15 +9,14 @@
 
     <div class="content" id="site-content-full-width">
 		<?php
-		    // Start the loop.
-		    while ( have_posts() ) : the_post();
-
-		        // Include the page content.
-		       the_content();
-
-		    // End the loop.
-		    endwhile;
-		?>
+			// Start the loop.
+			if (have_posts()) {
+				while (have_posts()) {
+					the_post();
+					// Include the page content.
+					the_content();
+				} // End the loop.
+			} ?>
 
 	</div>
 
