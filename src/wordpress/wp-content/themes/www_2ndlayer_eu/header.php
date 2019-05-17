@@ -81,7 +81,7 @@
               );
             ?>
 
-            <a class="navbar-item" href="https://business.facebook.com/2ndlayer.eu/">
+            <a class="navbar-item" href="https://www.facebook.com/2ndlayer.eu/">
               <i class="fab fa-facebook-square title"></i>
             </a>
             <a class="navbar-item" href="https://www.linkedin.com/company/2ndlayer/">
