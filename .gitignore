@@ -1,0 +1,9 @@
+src/wordpress/wp-content/plugins/index.php
+src/wordpress/wp-content/plugins/akismet/
+src/wordpress/wp-content/plugins/hello.php
+src/wordpress/wp-content/themes/index.php
+src/wordpress/wp-content/themes/twentynineteen
+src/wordpress/wp-content/themes/twentyseventeen
+src/wordpress/wp-content/themes/twentysixteen
+docker-compose.yml
+.DS_Store

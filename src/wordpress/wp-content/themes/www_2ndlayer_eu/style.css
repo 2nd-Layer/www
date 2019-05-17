@@ -1,0 +1,33 @@
+/*
+Theme Name: Blockinfo.cz 2019 Theme
+Author: Mark Stopka
+Description: Theme for Blockinfo.cz portal
+Version: 0.0.1
+Tags: blockinfo
+*/
+
+footer {
+  flex-shrink: 0;
+  padding: 1rem;
+  background-color: #286293;
+  width: 100%;
+}
+
+#site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#site-content {
+  margin: 0.5rem;
+  flex: auto;
+}
+
+#site-content #primary-content {
+  padding-top: 0rem;
+}
+
+#site-content #primary-content p {
+  margin-bottom: 0.75rem;
+}
