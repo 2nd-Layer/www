@@ -80,7 +80,7 @@
             ?>
 
             <a class="navbar-item" href="https://www.facebook.com/">
-              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-facebook-square title"></i>
             </a>
           </div>
         </nav>
