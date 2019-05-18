@@ -1,6 +1,7 @@
     <footer>
       <div class="columns">
         <div class="column is-one-half">
+          <h3 class="title  has-text-centered has-text-white is-3">Subscribe to our newsletter</h3>
           <div class="field is-grouped">
             <p class="control is-expanded has-icons-left">
               <input class="input is-rounded" type="text" placeholder="Name">
