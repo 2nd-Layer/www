@@ -1,27 +1,30 @@
     <footer>
       <div class="columns">
         <div class="column is-one-half">
-          <div class="field is-horizontal">
-            <div class="control has-icons-left">
+          <div class="field is-grouped">
+            <p class="control is-expanded has-icons-left">
               <input class="input is-rounded" type="text" placeholder="Name">
               <span class="icon is-left">
                 <i class="fas fa-id-card"></i>
               </span>
-            </div>
-            <div class="control has-icons-left">
+            </p>
+            <p class="control is-expanded has-icons-left">
               <input class="input is-rounded" type="text" placeholder="Surname">
               <span class="icon is-left">
                 <i class="fas fa-id-card"></i>
               </span>
-            </div>
+            </p>
           </div>
-          <div class="field">
-            <div class="control has-icons-left">
+          <div class="field is-grouped">
+            <p class="control is-expanded has-icons-left">
               <input class="input is-rounded" type="text" placeholder="E-mail">
               <span class="icon is-left">
                 <i class="fas fa-envelope"></i>
               </span>
-            </div>
+            </p>
+            <p class="control">
+              <a class="button is-primary">Subscribe</a>
+            </p>
           </div>
         </div>
         <div class="column has-text-centered">
