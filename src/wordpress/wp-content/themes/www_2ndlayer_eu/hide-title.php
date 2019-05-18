@@ -1,3 +1,10 @@
+<?php
+/*
+*
+* Template Name: Hide Title
+*/
+?>
+
 <?php get_header(); ?>
 
     <div class="content" id="site-content">
@@ -6,8 +13,6 @@
 			if (have_posts()) {
 				while (have_posts()) {
 					the_post();
-					// Include page title.
-					the_title( '<h3>', '</h3>' );
 					// Include the page content.
 					the_content();
 				} // End the loop.
