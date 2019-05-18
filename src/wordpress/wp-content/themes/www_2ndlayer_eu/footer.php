@@ -24,7 +24,7 @@
               </span>
             </p>
             <p class="control">
-              <a class="button is-primary">Subscribe</a>
+                <input class="button is-primary" type="submit" value="Subscribe">
             </p>
           </div>
         </div>
