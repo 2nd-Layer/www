@@ -77,6 +77,64 @@
         evt.currentTarget.className += " is-active";
       }
     </script>
+    <script type="text/javascript">
+      'use strict';
+
+      document.addEventListener('DOMContentLoaded', function () {
+
+        // Dropdowns in navbar
+
+        var $dropdowns = getAll('.navbar-item.has-dropdown:not(.is-hoverable)');
+
+        if ($dropdowns.length > 0) {
+          $dropdowns.forEach(function ($el) {
+            $el.addEventListener('click', function (event) {
+              event.stopPropagation();
+              $el.classList.toggle('is-active');
+            });
+          });
+
+          document.addEventListener('click', function (event) {
+            closeDropdowns();
+          });
+        }
+
+        function closeDropdowns() {
+          $dropdowns.forEach(function ($el) {
+            $el.classList.remove('is-active');
+          });
+        }
+
+        // Close dropdowns if ESC pressed
+        document.addEventListener('keydown', function (event) {
+          var e = event || window.event;
+          if (e.keyCode === 27) {
+            closeDropdowns();
+          }
+        });
+
+        // Toggles
+
+        var $burgers = getAll('.burger');
+
+        if ($burgers.length > 0) {
+          $burgers.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+              var target = $el.dataset.target;
+              var $target = document.getElementById(target);
+              $el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+
+        // Functions
+
+        function getAll(selector) {
+          return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+        }
+      });
+    </script>
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
     <?php wp_head(); ?>
 
@@ -92,32 +150,39 @@
                  src="<?php echo get_bloginfo('template_directory'); ?>/images/2nd-layer-logo-blue.png"
                  style="height: 100px;"
             />
+            <div class="navbar-burger burger" data-target="HeaderMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </div>
           </div>
-          <div class="navbar-end">
-            <?php
-              wp_nav_menu(
-                array (
-                'menu'           => 'header-menu',
-                'theme_location' => 'header-menu',
-                'container'      => false,
-                'walker'         => new Bulma_Nav_Walker(),
-                'items_wrap'     => '%3$s',
-                )
-              );
-            ?>
+          <div class="navbar-menu" id="HeaderMenu">
+            <div class="navbar-end">
+              <?php
+                wp_nav_menu(
+                  array (
+                  'menu'           => 'header-menu',
+                  'theme_location' => 'header-menu',
+                  'container'      => false,
+                  'walker'         => new Bulma_Nav_Walker(),
+                  'items_wrap'     => '%3$s',
+                  )
+                );
+              ?>
 
-            <a class="navbar-item" href="https://www.facebook.com/2ndlayer.eu/">
-              <i class="fab fa-facebook-square title"></i>
-            </a>
-            <a class="navbar-item" href="https://www.linkedin.com/company/2ndlayer/">
-              <i class="fab fa-linkedin title"></i>
-            </a>
-            <a class="navbar-item" href="https://github.com/2nd-Layer">
-              <i class="fab fa-github-square title"></i>
-            </a>
-            <a class="navbar-item" href="https://www.youtube.com/channel/UCncyGaCH5emsxroa3-YIb_A/">
-              <i class="fab fa-youtube-square title"></i>
-            </a>
+              <a class="navbar-item" href="https://www.facebook.com/2ndlayer.eu/">
+                <i class="fab fa-facebook-square title"></i>
+              </a>
+              <a class="navbar-item" href="https://www.linkedin.com/company/2ndlayer/">
+                <i class="fab fa-linkedin title"></i>
+              </a>
+              <a class="navbar-item" href="https://github.com/2nd-Layer">
+                <i class="fab fa-github-square title"></i>
+              </a>
+              <a class="navbar-item" href="https://www.youtube.com/channel/UCncyGaCH5emsxroa3-YIb_A/">
+                <i class="fab fa-youtube-square title"></i>
+              </a>
+            </div>
           </div>
         </nav>
         <!-- END HEADER NAV -->
