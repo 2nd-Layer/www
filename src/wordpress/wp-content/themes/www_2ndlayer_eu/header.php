@@ -146,10 +146,12 @@
         <nav class="navbar is-spaced" role="navigation" aria-label="dropdown main navigation">
           <div class="navbar-brand">
             <!-- navbar items, navbar burger... -->
-            <img class="navbar-item" 
-                 src="<?php echo get_bloginfo('template_directory'); ?>/images/2nd-layer-logo-blue.png"
-                 style="height: 100px;"
-            />
+            <a href="<?php echo get_bloginfo('url'); ?>">
+              <img class="navbar-item"
+                   src="<?php echo get_bloginfo('template_directory'); ?>/images/2nd-layer-logo-blue.png"
+                   style="height: 100px;"
+              />
+            </a>
             <div class="navbar-burger burger" data-target="HeaderMenu" aria-label="menu" aria-expanded="false">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
